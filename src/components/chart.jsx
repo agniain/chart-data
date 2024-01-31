@@ -57,12 +57,12 @@ const Chart = () => {
   };
 
   return (
-      <div className="container mx-auto mt-8">
+      <div className="container mx-auto mt-2 border-t-4 border-gray-700">
         {/* Number of Orders Chart */}
         <div className="flex flex-col md:flex-row items-center justify-center">
           <div className="md:w-2/3 mx-4">
-            <div className="mb-8">
-              <h2 className="text-xl text-center font-semibold mt-8 mb-5">
+            <div className="mb-8 mt-8">
+              <h2 className="text-xl text-center font-semibold mb-5">
                 <Link to="/orders" className="text-cyan-950 hover:underline">
                   Number of Orders
                 </Link>
