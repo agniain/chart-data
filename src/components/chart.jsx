@@ -58,36 +58,58 @@ const Chart = () => {
 
   return (
       <div className="container mx-auto mt-8">
-        <h1 className="text-2xl font-semibold ml-5 mb-4">Known to provide the accurate charts.</h1>
-
         {/* Number of Orders Chart */}
-        <div className="mb-8">
-          <h2 className="text-xl text-center font-semibold mt-8">
-            <Link to="/orders" className="text-cyan-950 hover:underline">
-              Number of Orders
-            </Link>
-          </h2>
-            <LineChart data={ordersData} title="Number of Orders Over Time" chartType="line" />
+        <div className="flex flex-col md:flex-row items-center justify-center">
+          <div className="md:w-2/3 mx-4">
+            <div className="mb-8">
+              <h2 className="text-xl text-center font-semibold mt-8 mb-5">
+                <Link to="/orders" className="text-cyan-950 hover:underline">
+                  Number of Orders
+                </Link>
+              </h2>
+                <LineChart data={ordersData} title="Number of Orders Over Time" chartType="line" />
+            </div>
+          </div>
+
+          <div className="md:w-1/3 mx-4">
+            <h1 className="text-2xl font-semibold">LINE CHART.</h1>
+          </div>
         </div>
 
         {/* Average Order Value Chart */}
-        <div>
-          <h2 className="text-xl text-center font-semibold mb-2">
-            <Link to="/average-order" className="text-cyan-950 hover:underline">
-              Average Order Value
-            </Link>
-          </h2>
-            <LineChart data={averageOrderValueData} title="Average Order Value Over Time" chartType="bar"/>
+        <div className="flex flex-col md:flex-row items-center justify-center">
+          <div className="md:w-1/3">
+            <h1 className="text-2xl text-center font-semibold">BAR CHART.</h1>
+          </div>
+          
+          <div className="md:w-2/3 mx-4">
+            <div className="mb-8">
+              <h2 className="text-xl text-center font-semibold mt-8 mb-5">
+                <Link to="/average-order" className="text-cyan-950 hover:underline">
+                  Average Order Value
+                </Link>
+              </h2>
+              <LineChart data={averageOrderValueData} title="Average Order Value Over Time" chartType="bar"/>
+            </div>
+          </div>
         </div>
 
         {/* Orders by Product Category Pie Chart */}
-        <div>
-          <h2 className="text-xl text-center font-semibold mt-10 mb-2">
-            <Link to="/by-category" className="text-cyan-950 hover:underline">
-              Orders by Product Category
-            </Link>
-          </h2>
-            <PieChart data={ordersByCategoryData} />
+        <div className="flex flex-col md:flex-row items-center justify-center">
+          <div className="md:w-2/3 mx-4">
+            <div className="mb-8">
+              <h2 className="text-xl text-center font-semibold mt-8 mb-5">
+                <Link to="/by-category" className="text-cyan-950 hover:underline">
+                  Orders by Product Category
+                </Link>
+              </h2>
+              <PieChart data={ordersByCategoryData} />
+            </div>
+          </div>
+
+          <div className="md:w-1/3 mx-4">
+            <h1 className="text-2xl font-semibold">PIE CHART.</h1>
+          </div>
         </div>
       </div>
   );

@@ -64,8 +64,8 @@ const LineChart = ({ data, chartType }) => {
   }, [data, chartType]);
 
   return (
-    <div className="w-1/2 mx-auto">
-      <canvas ref={chartContainerRef} className="w-full sm:w-1/2 bg-white rounded-lg shadow-lg" />
+    <div className="w-5/6 mx-auto">
+      <canvas ref={chartContainerRef} className="w-full bg-white rounded-lg shadow-lg" />
     </div>
   );
 };

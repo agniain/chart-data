@@ -39,8 +39,8 @@ const PieChart = ({ data }) => {
   }, [data]);
 
   return (
-    <div className="w-1/2 mx-auto">
-      <canvas ref={chartContainerRef} className="w-full sm:w-1/2 bg-white rounded-lg shadow-lg" />
+    <div className="w-4/6 mx-auto">
+      <canvas ref={chartContainerRef} className="w-full bg-white rounded-lg shadow-lg" />
     </div>
   );
 };

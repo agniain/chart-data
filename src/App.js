@@ -4,8 +4,6 @@ import Average from './pages/average-order';
 import Order from './pages/order-detail';
 import ByCategory from './pages/by-category';
 
-
-
 const App = () => {
   return (
     <>
