@@ -1,13 +1,35 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import { createRoot } from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
+import './index.css';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Home from './pages/home';
+import Average from './pages/average-order';
+import Order from './pages/order-detail';
+import ByCategory from './pages/by-category';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/average-order",
+    element: <Average />,
+  },
+  {
+    path: "/orders",
+    element: <Order />,
+  },
+  {
+    path: "/by-category",
+    element: <ByCategory />,
+  },
+]);
+
+createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
