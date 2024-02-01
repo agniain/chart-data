@@ -72,14 +72,16 @@ const Chart = () => {
           </div>
 
           <div className="md:w-1/3 mx-4">
-            <h1 className="text-2xl font-semibold">LINE CHART.</h1>
+            <h1 className="text-4xl font-semibold shadow-lg">LINE CHART.</h1>
+            <h3 className="text-xl font-semibold shadow-lg">Choose your chart</h3>
           </div>
         </div>
 
         {/* Average Order Value Chart */}
         <div className="flex flex-col md:flex-row items-center justify-center">
           <div className="md:w-1/3">
-            <h1 className="text-2xl text-center font-semibold">BAR CHART.</h1>
+            <h1 className="text-4xl text-center font-semibold shadow-lg">BAR CHART.</h1>
+            <h3 className="text-xl text-center font-semibold shadow-lg">Fit the chart you need</h3>
           </div>
           
           <div className="md:w-2/3 mx-4">
@@ -107,8 +109,9 @@ const Chart = () => {
             </div>
           </div>
 
-          <div className="md:w-1/3 mx-4">
-            <h1 className="text-2xl font-semibold">PIE CHART.</h1>
+          <div className="md:w-1/3">
+            <h1 className="text-4xl font-semibold shadow-lg">PIE CHART.</h1>
+            <h3 className="text-xl font-semibold shadow-lg">Get you best and accurate chart now</h3>
           </div>
         </div>
       </div>

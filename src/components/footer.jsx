@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 p-4 mt-8 w-full">
+    <footer className="p-4 mt-8 w-full">
         <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-white">
+        <Link to="/" className="text-black">
             About Us
         </Link>
 
-        <p className="text-white"><LocationOnIcon /> Bandung, Indonesia</p>
-        <p className="text-white"><CopyrightIcon /> Copyright 2024</p>
+        <p className="text-black"><LocationOnIcon /> Bandung, Indonesia</p>
+        <p className="text-black"><CopyrightIcon /> Copyright 2024</p>
         
         </div>
     </footer>

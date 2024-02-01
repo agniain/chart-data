@@ -14,7 +14,7 @@ const PhotoCarousel = ({ photos }) => {
 
   return (
     <div>
-    <h1 className="text-2xl font-semibold ml-5 mt-5 mb-4">Known to provide the accurate charts.</h1>
+    <h1 className="text-2xl font-semibold ml-10 mt-5 mb-4">Known to provide the accurate charts.</h1>
     <div className="relative overflow-hidden w-5/6 mt-5 mx-auto mb-9 h-84 md:h-64 lg:h-72">
       <Transition
         show={true}
